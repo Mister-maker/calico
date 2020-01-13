@@ -1,0 +1,29 @@
+.row-of-2
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    @include for-size(tablet-landscape-up)
+        grid-template-columns: 1fr
+
+.row-of-3
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+
+.row-of-4
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+
+.row-of-6
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+
+
+.column
+    // border: 1px solid red
+    position: relative
+    height: 100%
+    width: 100%
+    
+    // border: 1px solid red
+
+body
+    background: $gray

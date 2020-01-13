@@ -1,0 +1,38 @@
+.header
+    height: 95vh
+    width: 100%
+    // background: $secondary-color
+    position: relative
+    background: rgba($secondary-color, 0.8)
+    &::before
+        content: ''
+        position: absolute
+        background: $white
+        height: 60px
+        width: 130px
+        bottom: -8%
+        left: 50%
+        transform: translateX(-50%)
+        clip-path: polygon(100% 0, 0 0, 50% 100%)
+    &__container
+        max-width: 550px
+        height: calc( 100% - 100px )
+        overflow: hidden
+        align-items: center  
+        margin: 0px auto
+        padding-top: 35px
+        @include for-size(phone-only)
+            padding: 35px 2% 0 2%
+
+    &__video-background
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 100%
+
+        video
+            height: 100%
+            width: 100%
+            object-fit: cover
+       
+

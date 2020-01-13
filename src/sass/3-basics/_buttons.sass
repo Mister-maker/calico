@@ -1,0 +1,28 @@
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+  display: inline-block
+  padding: 15px 30px
+  color: black
+  text-align: center
+  font-size: 14px
+  font-weight: 600
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  background-color: $btn-color
+  border-radius: 50px
+  cursor: pointer
+  box-sizing: border-box
+  transition: all 0.2s ease
+  box-shadow: 0 20px 12px -15px rgba(0, 0, 0, 0.2)
+  color: $white
+
+  &:hover,
+  &:active,
+  &:focus
+    outline: 0
+    transform: translateY(3px)
+    color: darken($gray, 10%)

@@ -1,0 +1,55 @@
+.card
+    width: 60%
+    position: absolute
+    opacity: 0
+    top: 50% 
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: $background-color
+    padding: 3rem
+    border-radius: 6px
+    color: $white
+    @include for-size(tablet-landscape-up)
+        width: 50%
+        text-align: center
+    @include for-size(phone-only)
+        width: 90%
+
+    &--rotate-card
+        transform: translate(-50%, -50%) rotate(180deg)
+
+        &::before
+            top: 45% !important
+            @include for-size(tablet-landscape-up)
+                top: -40% !important
+                transform: translateX(50%) rotate(-90deg) !important
+
+    &__content
+        &--rotate
+            transform: rotate(-180deg)
+        p
+            font-size: 1.5rem
+            word-spacing: 2px
+            letter-spacing: 1px
+    &::before
+        content: ''
+        position: absolute
+        width: 8rem
+        height: 16rem
+        background: $background-color
+        top: 55%
+        right: -4rem
+        transform: translateY(-50%) 
+        z-index: -3
+        clip-path: polygon(0 0, 0 100%, 100% 50%)
+        @include for-size(tablet-landscape-up)
+            top: 80%
+            right: 50%
+            transform: translateX(50%) rotate(90deg)
+
+
+// class added by javascript
+.show-cards
+    transition: all 500ms ease-in
+    opacity: 1
+

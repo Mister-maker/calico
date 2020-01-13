@@ -1,0 +1,25 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/pug/*pug --no-source-maps",
+    "build": "parcel build src/pug/*.pug -d build/source --public-url ./ --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.3",
+    "postcss-font-magician": "^2.2.1",
+    "pug": "^2.0.3",
+    "sass": "^1.17.3"
+  },
+  "dependencies": {
+    "animejs": "^3.0.1",
+    "gsap": "^2.1.2"
+  }
+}

@@ -1,0 +1,68 @@
+.footer
+    background: $secondary-color
+    padding: 2rem 0
+    position: relative
+
+    &__mail
+        width: 110px
+        height: 110px
+        top: -20%
+        left: 50%
+        background: $secondary-color 
+        position: absolute
+        transform: translateX(-50%)
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        color: $white
+        font-size: 1.5rem
+        padding: 10px
+
+        i
+            font-size: 5rem
+            font-weight: 300
+            color: $white
+
+    &__adress
+        padding: 5rem 0 
+        color: $gray
+        @include for-size(tablet-landscape-up)
+            text-align: center
+            padding: 8rem 0 2rem 0
+
+    &__social-media
+        padding: 5rem 0 
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-end
+        color: $gray
+
+        @include for-size(tablet-landscape-up)
+            align-items: center
+            padding: 0 0 3rem 0
+
+
+        a
+            color: #ffffff
+
+        i
+            margin: 3px
+            font-size: 2rem
+
+    &__copy-right
+        text-align: center
+        color: $white
+
+        span
+            a
+                color: $white
+                transition: all 300ms ease
+                display: inline-block
+                &:hover
+                    color: $primary-color !important
+                    transform: rotate(-10deg) scale(1.3)

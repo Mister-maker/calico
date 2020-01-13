@@ -1,0 +1,36 @@
+.qr-scanner
+    @include for-size(tablet-landscape-up)
+        padding: 20rem 0 0rem 0
+        .column
+            padding-bottom: 30rem
+
+    @include for-size(phone-only)
+        padding: 10rem 0 0rem 0
+
+.product-journey
+    @include for-size(tablet-landscape-up)
+        padding: 12rem 0 0 0
+
+    @include for-size(phone-only)
+        padding: 8rem 0 0rem 0
+
+    .row-of-2
+        .column
+            padding-bottom: 30rem
+        @include for-size(tablet-landscape-up)
+            .column:nth-of-type(1)
+                order: 2 !important 
+.send-money
+    background: url('../images/shape.svg') no-repeat
+    background-size: 100%
+    background-position: bottom right
+    @include for-size(tablet-landscape-up)
+        padding: 12rem 0 20rem 0
+        .column
+            padding-bottom: 30rem
+    @include for-size(phone-only)
+        padding: 8rem 0 15rem 0
+
+
+
+

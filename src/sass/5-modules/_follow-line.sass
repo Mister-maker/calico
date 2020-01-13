@@ -1,0 +1,45 @@
+.follow-line
+    position: absolute
+    width: 8px
+    height: 100%
+    left: 50%
+    transform: translateX(-50%)
+    // background: $background-color
+    z-index: -1
+
+    .inner-line
+        background: $background-color
+        height: 0px
+        transition: all 300ms ease-out
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            bottom: -5px
+            left: 50%
+            width: 20px
+            height: 20px
+            background: $secondary-color
+            border-radius: 50%
+            transform: translateX(-50%)
+
+
+.circle-point
+    position: relative
+
+    .line-dot
+        position: absolute
+        background: $secondary-color
+        width: 20px 
+        height: 20px
+        right: -1.6%
+        top: 50%
+        border-radius: 50%
+        opacity: 0
+        animation: circle-blink 200ms ease-out infinite alternate
+        @include for-size(tablet-landscape-up)
+            display: none
+    // class added by javascript
+    .show-dots
+        transition: all 500ms ease-in
+        opacity: 1 !important

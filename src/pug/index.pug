@@ -1,0 +1,90 @@
+
+extends ./templates/layout.pug
+//- block append config
+//-     - let pageTitles = "Ha Ha"
+
+block main
+    header.header
+        .header__video-background
+            video(src="../videos/background-video.mp4" id="hero-video" autoplay muted loop)
+
+        include ./includes/_navbar.pug
+        .header__container
+            .header__content.u-center-text 
+                h1.heading-primary.u-margin-bottom-small Welcome To <span>Calico</span>
+                h2.sub-heading let's make trust througout the journey of your product with the help of technology.
+            .phone-container.phone-container--center.u-margin-top-medium
+                .speaker
+                .phone-image-container
+                    img(src="../images/login.svg" alt="login-screen")
+                .phone-button
+
+    main.main-container
+        //- Line in the center
+        .follow-line
+            .inner-line
+        section.qr-scanner
+            .row-of-2.wrapper
+                .column.circle-point
+                    .line-dot
+                    .card
+                        .card__content
+                            p Using a QR code calico app, customers can scan the QR code on the item once it has been delivered to them to verify the authenticity of items.
+                            a.button.open-overlay.u-margin-top-small Read more
+                    .overlay
+                        h1 Hello World
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam similique asperiores omnis.
+                        span.overlay__close
+                            <i class="fas fa-times"></i>
+
+                .column.u-padding-top-medium.u-padding-bottom-medium 
+                    .phone-container.phone-container--center.u-margin-top-medium
+                        .speaker
+                        .phone-image-container
+                            img(src="../images/qr-scanner.svg" alt="login-screen")
+                        .phone-button
+
+        section.product-journey
+            .row-of-2.wrapper
+                .column.u-padding-top-medium.u-padding-bottom-medium.circle-point
+                    .line-dot
+                    .phone-container.phone-container--center.u-margin-top-medium
+                        .speaker
+                        .phone-image-container
+                            img(src="../images/chain.svg" alt="login-screen")
+                        .phone-button
+                .column
+                    .card.card--rotate-card
+                        .card__content.card__content--rotate
+                            p QR code on the supply chain and the app will show you the true document produced by the issuer. This allows you to compare and see if the supply chain is an original or a fake.
+                            a.button.open-overlay.u-margin-top-small Read more
+                    .overlay
+                        h1 Go solo
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam similique asperiores omnis.
+                        span.overlay__close
+                            <i class="fas fa-times"></i>
+
+        section.send-money
+            .row-of-2.wrapper
+                .column.circle-point
+                    .line-dot
+                    .card
+                        .card__content
+                            p With one click, The consumer can get detailed analysis and report of the product purchased and business analysis.
+                            a.button.open-overlay.u-margin-top-small Read more
+                    .overlay
+                        h1 start over
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam similique asperiores omnis.
+                        span.overlay__close
+                            <i class="fas fa-times"></i>
+
+                .column.u-padding-top-medium.u-padding-bottom-medium
+                    .phone-container.phone-container--center.u-margin-top-medium
+                        .speaker
+                        .phone-image-container
+                            img(src="../images/generate-report.svg" alt="login-screen")
+                        .phone-button
+
+
+//- mixin showText(text, amount)
+//-     h2.heading-primary #{text} is #{amount} great. 

@@ -1,0 +1,21 @@
+block config
+    - let pageTitle = "Calico | Home"
+
+doctype
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{pageTitle}
+        link(rel="stylesheet", href="../sass/main.sass")
+    body
+        
+        block main
+            h1 Hello World 
+
+        //- video(src="../videos/test.mp4")
+
+        include ../includes/_footer.pug
+        script(src="https://kit.fontawesome.com/bbfd935f8f.js" crossorigin="anonymous")
+        script(src="../js/index.js")
